@@ -1,0 +1,24 @@
+{
+	"name": "tail",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"watch": "tailwindcss -i ./styles.css -o ./css/output.css --watch",
+		"devserver": "live-server",
+		"start": "npm-run-all --parallel devserver watch",
+		"build": "tailwindcss -i ./styles.css -o ./css/output.css"
+	},
+	"keywords": [],
+	"author": "Onyinye",
+	"license": "ISC",
+	"dependencies": {
+		"tailwindcss": "^3.0.24"
+	},
+	"devDependencies": {
+		"autoprefixer": "^10.4.7",
+		"concat": "^1.0.3",
+		"npm-run-all": "^4.1.5",
+		"postcss-cli": "^9.1.0"
+	}
+}
